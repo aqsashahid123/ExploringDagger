@@ -8,11 +8,9 @@ import dagger.Provides;
 @Module
 public class ContextModule {
     public Context context;
-
     public ContextModule(Context context) {
         this.context = context;
     }
-
     @Provides
     @ExploringDaggerScope
     @AppContext
